@@ -18,6 +18,29 @@
      <h1><%= content.title_en %><%= `(${content.title_jpn})` %> <%= `${content.release_date}` %></h1>
      <img src="<%= content.image %>" alt="">
     <% } %>
+
+
+    
+        <% if (!content && animes && animes.length > 0) { %>
+            <div class="animeList">
+    <h2>Most popular animes</h2>
+    <div class="animes">
+        <% animes.forEach(anime => { %>
+            <div class="anime">
+                <img src="<%= anime.images.jpg.image_url %>" alt="" width="150px">
+                <h3><%= anime.title %></h3>
+                <p>⭐ <%= anime.score %></p>
+                <p>📅 <%= anime.year %></p>
+                
+            </div>
+        <% }); %>
+    </div>
+<% } %>
+
+</div>
+
+        </div>
+    </div>
     </div>
 </body>
 </html>
