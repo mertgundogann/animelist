@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('partials/header.ejs') %>
+    <div class="container">
+    <form action="submit" method="get">
+        <input type="text" name="search" placeholder="Wanna see anime ? Type it.">
+        <button type="submit">Search</button>
+
+    </form>
+
+    <% if (content) { %>
+     <h1><%= content.title_en %><%= `(${content.title_jpn})` %> <%= `${content.release_date}` %></h1>
+     <img src="<%= content.image %>" alt="">
+    <% } %>
+    </div>
+</body>
+</html>
