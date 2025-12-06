@@ -3,6 +3,8 @@
 This project is a simple Anime Search application built with **Node.js, Express, EJS and Axios**.  
 It fetches anime data from the **Jikan API (MyAnimeList unofficial API)**.
 
+🚀 Live Demo
+[https:/[/searchanime.onrender.com](https://anime-list-wm26.onrender.com)](https://anime-list-wm26.onrender.com)
 ---
 
 ## 🚀 Features
