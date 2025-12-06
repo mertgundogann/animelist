@@ -5,7 +5,7 @@
 
 .header{
     text-align: center;
-    background-color: rgb(34, 40, 49);
+    background-color: #1B3C53;
     padding: 1rem;
 }
 .container{
@@ -14,36 +14,46 @@
    
 }
 body{
-  background-color: #393E46;
+  background-color: #234C6A;
   font-family: 'Roboto', sans-serif;
 }
 
 .animeList{
     width: 100%;
-    background-color: #00ADB5;
+    background-color: #456882;
     margin-top: 2rem;
     padding-top: 2rem;
 }
 .animes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2rem;
-    gap: 3px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
     
 }
 .anime{
-    width: 25%;
+    
+
    
 margin-bottom: 3rem;
     padding-top: 1rem;
+}
+img{
+    height: 200px;
 }
 h2{
     color: white;
 }
 h3{
     font-size: 0.8rem;
-    color: #FFF;
+    color: #fff;
     font-family: 'Noto Sans JP', 'Roboto', sans-serif;
-    
+    margin-top: 0.8rem;
+}
+.submit-anime{
+    margin-top: 1rem;
+    margin-bottom:1rem
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
 }

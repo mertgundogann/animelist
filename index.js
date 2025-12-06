@@ -46,6 +46,7 @@ app.get('/submit', async (req, res) => {
         title_jpn: result.title,
         release_date: result.year,
         image: result.images.jpg.image_url,
+        url : result.url
       },
       animes: null
     });
